@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 網站標題 -->
+    <title>Julie Tsai領導力教練、人生與職涯教練</title>
+    <!-- 載入 Tailwind CSS 框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind 配置：確保中文字體顯示正常
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                // 1. 使用 R25 G225 B212 (#19e1d4) 作為主色 (Primary Color)
+                primary: '#19e1d4', 
+                // 使用深色 Teal 作為對比色/輔助色，確保文字清晰
+                secondary: '#0f766e', 
+                background: '#f8f8f8',
+              },
+              fontFamily: {
+                sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+              },
+            }
+          }
+        }
+    </script>
+    <style>
+        /* 確保字體在不同系統上顯示正確的中文 */
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: #f8f8f8;
+        }
+        /* 使用 Secondary Color 作為標題分隔線 */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            margin: 10px auto 0;
+            background: #0f766e;
+            border-radius: 999px;
+        }
+        /* 英雄區塊的背景層次感 */
+        .hero-bg-design {
+            background-image: linear-gradient(135deg, #19e1d4 0%, #30e3d6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg-design::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 150%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(-5deg) translate(-25%, -25%);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- 導航列 (Navigation Bar) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold text-secondary">Julie Tsai領導力教練、人生與職涯教練</a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-secondary transition">關於教練</a>
+                <a href="#services" class="text-gray-600 hover:text-secondary transition">教練方案</a>
+                <a href="#lecture" class="text-gray-600 hover:text-secondary transition">講座主題</a>
+                <a href="#insights" class="text-gray-600 hover:text-secondary transition">洞察文章</a>
+                <a href="#contact" class="px-3 py-1 bg-secondary text-white rounded-lg shadow-md hover:bg-teal-700 transition">立即諮詢</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 英雄區塊 (Hero Section) - 更有設計感 -->
+    <section id="hero" class="hero-bg-design py-20 md:py-32 relative text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+            <div class="md:w-1/2 space-y-6 text-center md:text-left">
+                <h2 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight shadow-text-sm">
+                    洞察盲點、思維升級、<span class="text-secondary bg-white inline-block px-2 py-1 rounded-lg">無限成長</span>
+                </h2>
+                <p class="text-xl opacity-90 font-light">
+                    Julie Tsai 領導力教練、人生與職涯教練，助您發揮最大潛能，實現持續成功。
+                </p>
+                <a href="#contact" class="inline-block px-8 py-3 bg-secondary text-white font-bold rounded-xl shadow-xl hover:bg-teal-700 transition transform hover:scale-105 border-2 border-white">
+                    啟動您的蛻變之旅
+                </a>
+            </div>
+            <div class="md:w-1/3 flex justify-center relative">
+                <!-- 圖片使用一個深色背景圓形，使其更突出 -->
+                <div class="relative p-2 bg-secondary rounded-full shadow-2xl">
+                    <img src="uploaded:Julie.jpg-815907d6-0039-4639-82c8-789728858804" onerror="this.src='https://placehold.co/300x300/19e1d4/0f766e?text=Julie+Tsai';" alt="Julie Tsai 教練專業照片" class="rounded-full w-56 h-56 md:w-80 md:h-80 object-cover border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於教練 (About Section) -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold section-title mb-10">關於教練 Julie Tsai</h2>
+            
+            <p class="text-lg text-gray-600 mb-10">
+                專注於結合教練引導與企業實戰經驗，Julie 教練提供深度的個人與企業教練服務，幫助客戶清晰目標、突破限制，並實現持續的領導力與職涯發展。
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-10 text-left">
+                <!-- 1. 卓越實戰經驗 (Practical Experience) - 移除粗體與更換圖標 -->
+                <div class="space-y-4 p-6 bg-gray-50 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-secondary flex items-center">
+                        <span class="text-3xl mr-3 text-primary">📈</span> 卓越實戰經驗 (Practical Experience)
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 ml-4">
+                        <li>企業運營與戰略規劃：曾任跨國管理顧問公司台灣區總經理，具備多年的企業經營、戰略規劃與高階團隊管理經驗，深諳職場挑戰核心。</li>
+                        <li>深度心理學基礎：擁有加拿大心理諮商碩士背景，整合心理學與教練引導，提供兼具同理心與務實行動方案的深度輔導。</li>
+                        <li>國際認證體系：Jack Canfield 成功學認證教練，專精於心態轉換、目標設定與高效能實現方法，強力驅動個人潛能。</li>
+                    </ul>
+                </div>
+                <!-- 1. 系統化教練模型 (Systematic Coaching) - 移除粗體與更換圖標 -->
+                <div class="space-y-4 p-6 bg-gray-50 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-secondary flex items-center">
+                        <span class="text-3xl mr-3 text-primary">⚙️</span> 系統化教練模型 (Systematic Coaching)
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 ml-4">
+                        <li>高階領導力與教練式管理：針對主管與高潛人才，發展系統性的領導風格與團隊溝通策略。</li>
+                        <li>限制性思維突破：運用系統化教練工具，協助客戶進行深層的情緒覺察與核心信念重塑。</li>
+                        <li>職涯轉型與生涯策略：為處於職涯過渡期的人士，清晰定位價值，制定轉型路徑與行動計劃。</li>
+                        <li>複雜情境溝通協調：提升在職場人際關係、高難度對話及跨文化協作中的溝通效能。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 成功見證 (Success Testimonials) - 擴充至 5 個 -->
+    <section id="testimonials" class="py-16 md:py-24 bg-primary text-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">成功見證</h2>
+            <p class="text-lg text-gray-700 mb-10">來自客戶和合作夥伴的真實回饋，見證突破與蛻變的力量</p>
+            
+            <!-- 採用 3 欄格線，共 5 則見證 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1: 高潛人才 (維持內容，移除引號，專業擴寫) -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-secondary flex flex-col items-center">
+                    <p class="italic text-gray-700 mb-4">
+                        能在安全且安心的環境下與教練聊聊自己身上發生的一切很棒，能即時解決內心與工作上的問題。我會將這項專業服務推薦給需要的同事。
+                    </p>
+                    <p class="font-bold text-secondary">- 美商跨國科技業高潛人才</p>
+                </div>
+                
+                <!-- Testimonial 2: 企業員工 (維持內容，移除引號，專業擴寫) -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-secondary flex flex-col items-center">
+                    <p class="italic text-gray-700 mb-4">
+                        教練讓人感覺很舒服、自在，仔細傾聽我的話語，讓我有安全感，並實質幫助我順利解決問題。非常感謝教練專業的服務。
+                    </p>
+                    <p class="font-bold text-secondary">- 法商跨國工業用原料產業 員工</p>
+                </div>
+                
+                <!-- Testimonial 3: 團隊與管理層回饋 (維持內容，移除引號，專業擴寫) -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-secondary flex flex-col items-center">
+                    <p class="italic text-gray-700 mb-4">
+                        Julie 善於協調統整團隊間的不同想法，冷靜處理突發狀況。她能充分授權、挖掘長才，並同理且精準地摘要並發掘相關問題。是一位令人尊敬的管理者。
+                    </p>
+                    <p class="font-bold text-secondary">- 團隊與管理層回饋摘要</p>
+                </div>
+                
+                <!-- Testimonial 4: 新增 - 職涯清晰度 -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-secondary flex flex-col items-center">
+                    <p class="italic text-gray-700 mb-4">
+                        透過幾次教練諮詢，我對未來職涯方向有了前所未有的清晰度。Julie總能精準點出我的盲點，並提供系統化的方法來逐步實現目標。這是一次價值非凡的投資。
+                    </p>
+                    <p class="font-bold text-secondary">- 科技新創公司 創辦人</p>
+                </div>
+                
+                <!-- Testimonial 5: 新增 - 領導力與成果 -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-secondary flex flex-col items-center">
+                    <p class="italic text-gray-700 mb-4">
+                        Julie在任職期間展現了強大的領導力與承諾，使團隊連續多年實現高成長和高盈利。她是一位安靜的學習者和實踐家，總是能迅速行動、交付成果，並為其他區域辦公室樹立最佳實踐標準。
+                    </p>
+                    <p class="font-bold text-secondary">- 國際顧問公司 CEO</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 教練方案整合 (Services Section) (次數已更新) -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">教練方案與定價</h2>
+            <p class="text-lg text-gray-600 mb-10">無論您是個人職涯探索者、高潛人才，還是企業領導者，我們都有最適合您的方案。</p>
+            
+            <div class="grid lg:grid-cols-3 gap-8 text-left">
+                
+                <!-- Plan 1: 個人啟程方案 (基礎) - 次數 6 -->
+                <div class="bg-white rounded-2xl shadow-2xl border-4 border-primary overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-6 bg-primary bg-opacity-30 border-b-2 border-primary">
+                        <h3 class="text-3xl font-bold text-secondary">🚀 個人啟程方案</h3>
+                        <p class="text-lg font-semibold text-gray-600 mt-1">中期承諾、目標導向</p>
+                    </div>
+                    
+                    <div class="p-8 space-y-6">
+                        <p class="text-5xl font-extrabold text-secondary">NT$ 42,000</p>
+                        <p class="text-lg font-bold text-gray-800 border-b pb-2">6 次 教練週期 (每次 60 分鐘)</p>
+                        <p class="text-gray-700">專為需要穩定支援、深度執行行動方案的人士設計。在六個週期內，鞏固新技能並確保轉變的持續性。</p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 關鍵議題深度聚焦與行動計劃調整</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 兩階段進度檢視與成果鞏固</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 核心資源覺察與心態韌性建立</li>
+                        </ul>
+                        <a href="#contact" class="inline-block mt-4 w-full text-center px-6 py-3 bg-primary text-gray-800 font-bold rounded-lg hover:bg-opacity-80 shadow-md transition">立即預約</a>
+                    </div>
+                </div>
+
+                <!-- Plan 2: 高潛人才深化方案 (深度) - 次數 12 -->
+                <div class="bg-white rounded-2xl shadow-2xl border-4 border-secondary overflow-hidden transform hover:scale-[1.03] transition duration-300 relative">
+                    <div class="absolute top-0 right-0 bg-secondary text-white text-sm font-bold px-4 py-1 rounded-bl-lg">✨ 最推薦：深度蛻變</div>
+                    <div class="p-6 bg-secondary text-white border-b-2 border-primary">
+                        <h3 class="text-3xl font-bold">💎 高潛人才深化方案</h3>
+                        <p class="text-lg font-semibold mt-1 opacity-90">長期、系統性領導力提升與內在重塑</p>
+                    </div>
+
+                    <div class="p-8 space-y-6">
+                        <p class="text-5xl font-extrabold text-secondary">NT$ 99,000</p>
+                        <p class="text-lg font-bold text-gray-800 border-b pb-2">12 次 教練週期 (每次 80 分鐘)</p>
+                        <p class="text-gray-700">系統化、長期性解決複雜的領導與職涯瓶頸。透過一年的教練支持，實現深層的思維重塑、行為模式升級，確保長期永續成長。</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 全面領導力發展與個人化領導風格建構</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 限制性信念深層清除與核心價值觀整合</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 職場高難度決策、談判與策略思維提升</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 持續追蹤、教練信件支持與資源客製化</li>
+                        </ul>
+                        <a href="#contact" class="inline-block mt-4 w-full text-center px-6 py-3 bg-secondary text-white font-bold rounded-lg hover:bg-teal-700 shadow-md transition">申請深度教練</a>
+                    </div>
+                </div>
+
+                <!-- Plan 3: 企業主管領導力方案 (高階/客製化) -->
+                <div class="bg-white rounded-2xl shadow-2xl border-4 border-primary overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-6 bg-primary bg-opacity-30 border-b-2 border-primary">
+                        <h3 class="text-3xl font-bold text-secondary">💼 企業主管專案</h3>
+                        <p class="text-lg font-semibold text-gray-600 mt-1">組織效能與管理諮詢</p>
+                    </div>
+                    
+                    <div class="p-8 space-y-6">
+                        <p class="text-5xl font-extrabold text-secondary">客製化報價</p>
+                        <p class="text-lg font-bold text-gray-800 border-b pb-2">時長與頻率依需求而定</p>
+                        <p class="text-gray-700">專為組織領導層設計，結合企業實戰經驗與教練技術，提供針對性的領導力提升與組織效率優化方案，直接影響業務績效與企業文化。</p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 組織專屬的教練式領導力培訓工作坊</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 主管一對一高階教練 (聚焦管理盲點與決策)</li>
+                            <li class="flex items-start"><span class="text-secondary font-bold mr-2 mt-1">✓</span> 打造具心理安全感的高效能團隊諮詢</li>
+                        </ul>
+                        <a href="#contact" class="inline-block mt-4 w-full text-center px-6 py-3 bg-primary text-gray-800 font-bold rounded-lg hover:bg-opacity-80 shadow-md transition">洽詢企業方案</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 講座主題 (Lecture Topics) -->
+    <section id="lecture" class="py-16 md:py-24 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">企業與公開講座主題</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 講座主題 Card 1: 你缺的不是努力,是教練 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-secondary space-y-3">
+                    <div class="flex items-center justify-center h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://placehold.co/400x200/e0f2f1/0f766e?text=探索矽谷秘密武器" onerror="this.src='https://placehold.co/400x200/e0f2f1/0f766e?text=探索矽谷秘密武器';" alt="探索矽谷執行長與歐普拉都信任的秘密武器" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary">你缺的不是努力,是教練</h3>
+                    <p class="text-gray-600 text-sm">探索矽谷執行長與歐普拉都信任的秘密武器。本課程揭開教練如何協助領導者突破瓶頸、激發潛能，讓你掌握正確的努力方向。</p>
+                </div>
+                
+                <!-- 講座主題 Card 2: 情感健康的門徒 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-secondary space-y-3">
+                    <div class="flex items-center justify-center h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://placehold.co/400x200/e0f2f1/0f766e?text=情緒覺察與安定" onerror="this.src='https://placehold.co/400x200/e0f2f1/0f766e?text=情緒覺察與安定';" alt="情感健康的門徒：情緒覺察" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary">情感健康的門徒</h3>
+                    <p class="text-gray-600 text-sm">屬靈領袖從情緒覺察開始。帶領學員運用情緒盤點與焦慮五步驟，提升自我覺察與情緒管理力，建立內在安定的力量。</p>
+                </div>
+
+                <!-- 講座主題 Card 3: 領導者的困難溝通指南 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-secondary space-y-3">
+                    <div class="flex items-center justify-center h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://placehold.co/400x200/e0f2f1/0f766e?text=衝突轉化合作" onerror="this.src='https://placehold.co/400x200/e0f2f1/0f766e?text=衝突轉化合作';" alt="領導者的困難溝通指南" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary">領導者的困難溝通指南</h3>
+                    <p class="text-gray-600 text-sm">從衝突到合作的關鍵：拆解溝通底層邏輯，掌握有效設定溝通目標的心法與策略。讓關鍵對話不再是成本，而是驅動績效的引擎。</p>
+                </div>
+
+                <!-- 講座主題 Card 4: 釋放性別差異的力量 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-secondary space-y-3">
+                    <div class="flex items-center justify-center h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://placehold.co/400x200/e0f2f1/0f766e?text=多元與高績效" onerror="this.src='https://placehold.co/400x200/e0f2f1/0f766e?text=多元與高績效';" alt="釋放性別差異的力量" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary">釋放性別差異的力量-從多元到高績效</h3>
+                    <p class="text-gray-600 text-sm">探討職場性別差異對團隊動態的影響，學習如何將多元視角轉化為組織資產，提升團隊協作與決策品質。</p>
+                </div>
+
+                <!-- 講座主題 Card 5: 逆境管理-韌性培養的關鍵心法 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-secondary space-y-3">
+                    <div class="flex items-center justify-center h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://placehold.co/400x200/e0f2f1/0f766e?text=韌性與成長" onerror="this.src='https://placehold.co/400x200/e0f2f1/0f766e?text=韌性與成長';" alt="逆境管理" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary">逆境管理-韌性培養的關鍵心法</h3>
+                    <p class="text-gray-600 text-sm">學習在壓力與挑戰下保持穩定與成長的心理韌性。掌握面對逆境的有效管理心法，讓挑戰成為個人成長的催化劑。</p>
+                </div>
+                
+                <!-- 講座主題 Card 6: 不失速的人生-壓力重塑,職場續航關鍵 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-2 border-secondary space-y-3">
+                    <div class="flex items-center justify-center h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://placehold.co/400x200/e0f2f1/0f766e?text=壓力重塑與續航" onerror="this.src='https://placehold.co/400x200/e0f2f1/0f766e?text=壓力重塑與續航';" alt="不失速的人生" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary">不失速的人生-壓力重塑,職場續航關鍵</h3>
+                    <p class="text-gray-600 text-sm">掌握壓力認知與管理技巧，將壓力轉化為正向動力。學習身心平衡的實用策略，確保職涯長期的穩定與續航力。</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 洞察文章 (Insight Articles) -->
+    <section id="insights" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold section-title mb-12">最新洞察文章</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                
+                <!-- Article 1 -->
+                <a href="#" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <p class="text-sm text-gray-500 mb-2">領導力 | 2025.10.15</p>
+                    <h4 class="text-xl font-semibold text-secondary mb-3">從優秀到卓越：高階主管的思維盲點與突破</h4>
+                    <p class="text-gray-600 text-sm line-clamp-3">探討許多高階領導者在達到一定成就後，常面臨的自我設限與認知偏差，並提供教練引導的實際方法。</p>
+                </a>
+                
+                <!-- Article 2 -->
+                <a href="#" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <p class="text-sm text-gray-500 mb-2">職涯 | 2025.09.28</p>
+                    <h4 class="text-xl font-semibold text-secondary mb-3">別再等待完美時機：規劃職涯轉型的三個關鍵步驟</h4>
+                    <p class="text-gray-600 text-sm line-clamp-3">分享如何在變動的市場中，運用教練工具釐清核心價值，並採取有方向的行動，順利完成職涯過渡。</p>
+                </a>
+                
+                <!-- Article 3 -->
+                <a href="#" class="block bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <p class="text-sm text-gray-500 mb-2">情緒 | 2025.09.01</p>
+                    <h4 class="text-xl font-semibold text-secondary mb-3">面對壓力與焦慮：如何在職場中建立心理安全感？</h4>
+                    <p class="text-gray-600 text-sm line-clamp-3">從心理諮商與教練的角度，分析職場壓力的根源，並提供情緒覺察與釋放焦慮的實用技巧。</p>
+                </a>
+            </div>
+            
+            <a href="#" class="mt-10 inline-block px-6 py-3 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary hover:text-white transition">
+                瀏覽所有文章
+            </a>
+        </div>
+    </section>
+
+
+    <!-- 聯絡區塊 (Contact Section) - 背景使用 Primary Color (#19e1d4) -->
+    <section id="contact" class="py-16 md:py-24 bg-primary text-gray-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-4xl font-bold">與 Julie 教練聯繫</h2>
+            <p class="text-xl opacity-90">
+                準備好開始您的個人或企業蛻變之旅了嗎？立即聯繫我們，預約首次諮詢。
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <div class="p-4 bg-secondary text-white rounded-lg shadow-xl font-semibold">
+                    📧 Email: <a href="mailto:julie.tsai2025@gmail.com" class="hover:underline transition">julie.tsai2025@gmail.com</a>
+                </div>
+                <div class="p-4 bg-secondary text-white rounded-lg shadow-xl font-semibold">
+                    🌐 非比諮詢創辦人
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 (Footer) -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; 2025 Julie Tsai Coaching. All rights reserved. | Powered by 非比諮詢有限公司
+        </div>
+    </footer>
+    
+</body>
+</html>
