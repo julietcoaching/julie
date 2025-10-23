@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成就美好人生系列講座 - Julie Tsai</title>
+    <!-- 載入 Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- 設定字體為 Inter 和思源黑體 (或系統預設字體) --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', 'Noto Sans TC', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #f7f7f9;
+        }
+        /* 自定義卡片背景和陰影 */
+        .card-bg {
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 0 10px -5px rgba(0, 0, 0, 0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-bg:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px -8px rgba(0, 0, 0, 0.1), 0 0 15px -5px rgba(0, 0, 0, 0.05);
+        }
+        /* 主色調：沉穩、專業的藍綠色 */
+        .primary-color {
+            background-color: #0d9488; /* Teal 700 */
+        }
+        .text-primary-color {
+            color: #0d9488;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- 頂部導航欄 (Sticky Header) --><header class="sticky top-0 z-50 bg-white/95 shadow-md backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/系列名稱 --><div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold text-gray-900 tracking-wider">
+                        美好人生系列講座
+                    </a>
+                </div>
+                <!-- 導航連結 --><nav class="hidden md:flex space-x-8">
+                    <a href="#speaker" class="text-gray-600 hover:text-primary-color transition duration-150 ease-in-out font-medium">講師介紹</a>
+                    <a href="#topics" class="text-gray-600 hover:text-primary-color transition duration-150 ease-in-out font-medium">講座主題</a>
+                    <a href="#program" class="text-gray-600 hover:text-primary-color transition duration-150 ease-in-out font-medium">合作模式</a>
+                    <a href="#contact-footer" class="text-white primary-color px-4 py-2 rounded-full font-semibold hover:bg-teal-600 transition">立即諮詢</a>
+                </nav>
+                <!-- 手機版菜單按鈕 (留空，僅為示範響應式設計) --><div class="md:hidden">
+                    <button class="text-gray-600 hover:text-primary-color p-2 rounded-md focus:outline-none">
+                        <!-- 漢堡圖標 --><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 英雄區塊 (Hero Section) --><section class="py-24 md:py-32 primary-color text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    成就美好人生系列講座
+                </h1>
+                <p class="text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                    結合心理諮商深度與教練專業，引領新世代走向卓越人生之路
+                </p>
+                <a href="#topics" class="inline-block bg-white text-primary-color font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    探索所有主題
+                </a>
+            </div>
+        </section>
+
+        <!-- 講師介紹 (Speaker Profile) --><section id="speaker" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary-color">
+                    特邀講師：Julie Tsai 與團隊
+                </h2>
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center card-bg p-8 md:p-12 rounded-xl">
+                    <div class="flex-shrink-0 mb-8 md:mb-0 md:mr-12">
+                        <!-- 講師照片 --><img src="https://assets-c3d.foleon.com/eu-central-1/c2d738f6d5014878a873523780362141/instructor-julie-tsai.q0xkwyq221.png" alt="Julie Tsai 講師" class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary-color shadow-lg">
+                    </div>
+                    <div class="md:flex-1">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">
+                            專業背景與使命
+                        </h3>
+                        <ul class="space-y-3 mb-6 text-lg list-disc pl-5 text-gray-700">
+                            <li>加拿大心理諮商碩士</li>
+                            <li>人生教練 (Life Coach)、領導力教練 (Leadership Coach)</li>
+                            <li>Jack Canfield 《成功的原則》認證教練</li>
+                            <li>曾任跨國顧問公司 台灣總經理</li>
+                        </ul>
+                        <p class="text-lg leading-relaxed text-gray-600">
+                            Julie Tsai 講師將深厚的心理諮商知識與豐富的企業領導經驗相結合，專注於提供實用、高效的自我成長與行動方案。她引導學員從心態、關係到行動，全面優化自我，實踐卓越人生。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講座主題 (Lecture Topics) --><section id="topics" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-16 text-primary-color">
+                    全方位講座主題 (6 大面向)
+                </h2>
+                
+                <!-- 主題分類網格 --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 壓力相關 (Stress) --><div class="card-bg p-6 rounded-xl border-t-4 border-red-500">
+                        <h3 class="text-xl font-bold mb-3 flex items-center text-red-600">
+                            <span class="text-2xl mr-2">🔥</span> 壓力管理 (Stress)
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="p-2 bg-red-50 rounded-md">《壓力不等於敵人：把壓力轉成動力》</li>
+                            <li class="p-2 bg-red-50 rounded-md">《情緒急救包：高壓情境的5招自我調節》</li>
+                            <li class="p-2 bg-red-50 rounded-md">《忙而不亂：高壓下的時間與優先順序》</li>
+                            <li class="p-2 bg-red-50 rounded-md">《家族與節慶：在家庭關係張力中保護自己》</li>
+                        </ul>
+                    </div>
+
+                    <!-- 人際關係 (Relationships) --><div class="card-bg p-6 rounded-xl border-t-4 border-blue-500">
+                        <h3 class="text-xl font-bold mb-3 flex items-center text-blue-600">
+                            <span class="text-2xl mr-2">🤝</span> 人際關係 (Relationships)
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="p-2 bg-blue-50 rounded-md">《高同理的傾聽術》</li>
+                            <li class="p-2 bg-blue-50 rounded-md">《稱讚與回饋：讓關係更強韌》</li>
+                            <li class="p-2 bg-blue-50 rounded-md">《與家人界線對話：不內耗、不冷戰》</li>
+                            <li class="p-2 bg-blue-50 rounded-md">《跨世代溝通：如何與Z世代共處》</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 營養相關 (Nutrition) --><div class="card-bg p-6 rounded-xl border-t-4 border-green-500">
+                        <h3 class="text-xl font-bold mb-3 flex items-center text-green-600">
+                            <span class="text-2xl mr-2">🍎</span> 營養與能量 (Nutrition)
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="p-2 bg-green-50 rounded-md">《吃出穩定能量：日常營養的關鍵》</li>
+                            <li class="p-2 bg-green-50 rounded-md">《保健食品怎麼吃？》</li>
+                            <li class="p-2 bg-green-50 rounded-md">《腸道友善飲食：情緒與大腦的第二顆心》</li>
+                            <li class="p-2 bg-green-50 rounded-md">《外食也健康：忙碌族的便捷策略》</li>
+                            <li class="p-2 bg-green-50 rounded-md">《減脂-科學化的體重管理》</li>
+                        </ul>
+                    </div>
+
+                    <!-- 人際界線 (Boundaries) --><div class="card-bg p-6 rounded-xl border-t-4 border-yellow-500">
+                        <h3 class="text-xl font-bold mb-3 flex items-center text-yellow-600">
+                            <span class="text-2xl mr-2">🛡️</span> 人際界線 (Boundaries)
+                        </h3>
+                        <!-- 注意：此處包含與壓力/關係類別重複的講座，網站設計時特意保留，以強調界線的重要性 --><ul class="space-y-2 text-gray-700">
+                            <li class="p-2 bg-yellow-50 rounded-md">《好人不等於好欺負：界線從自我定義開始》</li>
+                            <li class="p-2 bg-yellow-50 rounded-md">《拒絕的藝術：有禮貌地說不》</li>
+                            <li class="p-2 bg-yellow-50 rounded-md">《職場界線：避免過度承擔與情緒勞務》</li>
+                            <li class="p-2 bg-yellow-50 rounded-md">《家族與節慶：在關係張力中保護自己》</li>
+                        </ul>
+                    </div>
+
+                    <!-- 溝通相關 (Communication Skills) --><div class="card-bg p-6 rounded-xl border-t-4 border-indigo-500">
+                        <h3 class="text-xl font-bold mb-3 flex items-center text-indigo-600">
+                            <span class="text-2xl mr-2">💬</span> 溝通技巧 (Communication)
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="p-2 bg-indigo-50 rounded-md">《忙碌主管的1:1對談腳本》</li>
+                            <li class="p-2 bg-indigo-50 rounded-md">《伴侶對話：不內耗的需求表達》</li>
+                            <li class="p-2 bg-indigo-50 rounded-md">《正向溝通與教養》</li>
+                            <li class="p-2 bg-indigo-50 rounded-md">《教練式教養的藝術》</li>
+                        </ul>
+                    </div>
+
+                    <!-- 放鬆按摩 (Relaxation) --><div class="card-bg p-6 rounded-xl border-t-4 border-purple-500">
+                        <h3 class="text-xl font-bold mb-3 flex items-center text-purple-600">
+                            <span class="text-2xl mr-2">🧘‍♀️</span> 放鬆與健康 (Relaxation)
+                        </h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="p-2 bg-purple-50 rounded-md">《運動按摩 101：安全有效的自我放鬆入門》</li>
+                            <li class="p-2 bg-purple-50 rounded-md">《久坐救援：頸肩腰的日常按壓與活動度重啟》</li>
+                            <li class="p-2 bg-purple-50 rounded-md">《精油芳療怎麼用？》</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作模式與系列特色 (Program Structure) --><section id="program" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary-color">
+                    系列特色與合作機制
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    <!-- 講座形式 --><div class="card-bg p-8 rounded-xl border-l-4 border-primary-color">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center text-gray-900">
+                            <span class="text-primary-color mr-3">🕒</span> 專注且高效的知識傳遞
+                        </h3>
+                        <p class="text-lg text-gray-600 mb-4">
+                            系列講座設計為每月或每季一場，每次時長 60-90 分鐘。確保內容精華濃縮，讓忙碌的聽眾能在有限時間內獲得最大收穫，並立即應用於生活與職場。
+                        </p>
+                        <ul class="space-y-2 text-gray-700 font-medium">
+                            <li class="flex items-center"><span class="text-primary-color font-extrabold mr-2">&bull;</span> 時間長度：60-90 分鐘 (可彈性調整)</li>
+                            <li class="flex items-center"><span class="text-primary-color font-extrabold mr-2">&bull;</span> 頻率建議：每月或每季一場</li>
+                        </ul>
+                    </div>
+
+                    <!-- 後續服務 --><div class="card-bg p-8 rounded-xl border-l-4 border-primary-color">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center text-gray-900">
+                            <span class="text-primary-color mr-3">🎯</span> 深度連結與個人化服務
+                        </h3>
+                        <p class="text-lg text-gray-600 mb-4">
+                            講座結束後，將搭配問卷收集學員需求，實現從「學習」到「行動」的閉環。我們提供進階的個人化諮詢與教練服務，協助學員達成長期目標。
+                        </p>
+                        <p class="font-bold text-primary-color mt-4">
+                            問卷追蹤需求項目：
+                        </p>
+                        <div class="flex flex-wrap mt-2">
+                            <span class="bg-teal-100 text-teal-800 text-sm font-medium mr-2 mb-2 px-3 py-1 rounded-full">人生教練 (Life Coaching)</span>
+                            <span class="bg-teal-100 text-teal-800 text-sm font-medium mr-2 mb-2 px-3 py-1 rounded-full">運動諮詢 (Fitness Consulting)</span>
+                            <span class="bg-teal-100 text-teal-800 text-sm font-medium mr-2 mb-2 px-3 py-1 rounded-full">營養諮詢 (Nutrition Consulting)</span>
+                            <span class="bg-teal-100 text-teal-800 text-sm font-medium mr-2 mb-2 px-3 py-1 rounded-full">睡眠諮詢 (Sleep Coaching)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 原有的聯繫CTA區塊已移除 --><!-- <section id="contact" class="py-16 md:py-24 primary-color text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    為您的團隊/組織導入卓越成長計畫
+                </h2>
+                <p class="text-xl font-light mb-8">
+                    我們期待與您合作，根據您的組織需求客製化最適合的講座與教練方案。
+                </p>
+                <a href="mailto:contact@example.com" class="inline-block bg-white text-primary-color font-bold py-3 px-10 rounded-full text-xl shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    立即聯繫洽談合作
+                </a>
+            </div>
+        </section> --></main>
+
+    <!-- 頁腳 (Footer) --><footer id="contact-footer" class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-left">
+                <!-- 關於我們 --><div>
+                    <h4 class="text-lg font-bold mb-3 text-primary-color">成就美好人生系列</h4>
+                    <p class="text-sm text-gray-400">
+                        專注於結合心理學、領導力與健康科學，提供從內而外的全方位成長解決方案。
+                    </p>
+                </div>
+                <!-- 聯絡資訊 --><div>
+                    <h4 class="text-lg font-bold mb-3 text-primary-color">聯絡我們</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><span class="font-medium mr-2">Email:</span> julie.t.coaching@gmail.com</li>
+                        <li><span class="font-medium mr-2">電話:</span> +886 963336597</li>
+                    </ul>
+                </div>
+                <!-- 快速連結 --><div>
+                    <h4 class="text-lg font-bold mb-3 text-primary-color">快速連結</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#speaker" class="hover:text-primary-color transition text-gray-400">講師介紹</a></li>
+                        <li><a href="#topics" class="hover:text-primary-color transition text-gray-400">講座主題</a></li>
+                        <li><a href="#program" class="hover:text-primary-color transition text-gray-400">合作模式</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-700">
+                <p class="text-sm text-gray-500">
+                    &copy; 2025 成就美好人生系列講座版權所有。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
